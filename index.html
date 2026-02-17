@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakout Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="title">Breakout</h1>
+
+      <div id="start-screen" class="screen active">
+        <h2>Ready to Play?</h2>
+        <p>Use Left / Right arrows or move your mouse to control the paddle.</p>
+        <button id="start-button" class="btn">Start Game</button>
+      </div>
+
+      <div id="hud" class="hud hidden">
+        <span>Score: <strong id="score">0</strong></span>
+      </div>
+
+      <canvas id="game-canvas" width="800" height="500"></canvas>
+
+      <div id="end-screen" class="screen hidden">
+        <h2 id="end-title">Game Over</h2>
+        <p id="end-message">Your final score: 0</p>
+        <button id="restart-button" class="btn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
